@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Array Programs</title>
+</head>
+<body>
+  <h1>JavaScript Array Programs</h1>
+
+  <script>
+    // Task 1: Declare and Initialize an Empty Multidimensional Array
+    var emptyMultiArray = [[]];
+    console.log("Empty Multidimensional Array:", emptyMultiArray);
+
+    // Task 2: Declare and Initialize a Multidimensional Array Representing a Matrix
+    var matrix = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+    ];
+    console.log("Matrix Array:", matrix);
+
+    // Task 3: Program to Print Numeric Counting from 1 to 10
+    console.log("Numeric Counting from 1 to 10:");
+    for (var i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+
+    // Task 4: Program to Print Multiplication Table of a Number
+    var tableNumber = parseInt(prompt("Enter the number for multiplication table:"));
+    var tableLength = parseInt(prompt("Enter the length of the multiplication table:"));
+
+    console.log("Multiplication Table of " + tableNumber + " (up to " + tableLength + "):");
+    for (var i = 1; i <= tableLength; i++) {
+        console.log(tableNumber + " x " + i + " = " + (tableNumber * i));
+    }
+
+    // Task 5: Program to Print Items of an Array using a For Loop
+    var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+    console.log("Items of the Fruits Array:");
+    for (var i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
+
+    // Task 6: Generate the Following Series
+    // a. Counting: 1 to 15
+    console.log("Counting:");
+    for (var i = 1; i <= 15; i++) {
+        console.log(i);
+    }
+
+    // b. Reverse counting: 10 to 1
+    console.log("Reverse counting:");
+    for (var i = 10; i >= 1; i--) {
+        console.log(i);
+    }
+
+    // c. Even: 0 to 20
+    console.log("Even:");
+    for (var i = 0; i <= 20; i += 2) {
+        console.log(i);
+    }
+
+    // d. Odd: 1 to 19
+    console.log("Odd:");
+    for (var i = 1; i <= 19; i += 2) {
+        console.log(i);
+    }
+
+    // e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+    console.log("Series:");
+    for (var i = 2; i <= 20; i += 2) {
+        console.log(i + "k");
+    }
+
+    // Task 7: Search by User Input in an Array
+    var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+    var userInput = prompt("Enter an item to search:");
+
+    if (items.includes(userInput)) {
+        alert(userInput + " is found in the list.");
+    } else {
+        alert(userInput + " is not found in the list.");
+    }
+
+    // Task 8: Identify the Largest Number in the Array
+    var A = [24, 53, 78, 91, 12];
+    var largestNumber = Math.max(...A);
+    console.log("The largest number in the array is: " + largestNumber);
+
+    // Task 9: Identify the Smallest Number in the Array
+    var smallestNumber = Math.min(...A);
+    console.log("The smallest number in the array is: " + smallestNumber);
+
+    // Task 10: Print Multiples of 5 Ranging 1 to 100
+    console.log("Multiples of 5 from 1 to 100:");
+    for (var i = 1; i <= 100; i++) {
+        if (i % 5 === 0) {
+            console.log(i);
+        }
+    }
+  </script>
+  <br>
+    <a href="https://sadiafurqan.github.io/javascript-assigments/">javascript-assigments</a>
+</body>
+</html>
+
+        
